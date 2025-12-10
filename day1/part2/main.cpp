@@ -6,22 +6,17 @@ using namespace std;
 
 void calc(int &start, const string &op, int steps, int &z)
 {
-    //Brute force
+    // Brute force
     for (int i = 0; i < steps; i++)
     {
         if (op == "R")
-        {
             start++;
-        }
+
         if (op == "L")
-        {
             start--;
-        }
 
         if ((start % 100) == 0)
-        {
             z++;
-        }
     }
 }
 
